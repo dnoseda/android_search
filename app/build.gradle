@@ -18,8 +18,15 @@ android {
     }
 }
 
+repositories{
+    maven{
+        url "https://github.com/mercadolibre/java-sdk-repo/raw/master/snapshots"
+    }
+}
+
 dependencies {
     compile 'com.android.support:gridlayout-v7:19.0.1'
     compile 'com.android.support:appcompat-v7:+'
+    compile 'com.mercadolibre:sdk:0.0.1-SNAPSHOT'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
